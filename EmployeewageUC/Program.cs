@@ -13,6 +13,11 @@
             //UC-2
             DailyWage empDailyWage = new DailyWage();
             empDailyWage.dailyWage();
+
+
+            //UC-3
+            PartTimeFullTime empPartTimeFullTime = new PartTimeFullTime();
+            empPartTimeFullTime.partTimeFullTime();
         }
     }
 }
