@@ -25,6 +25,10 @@
             //UC-5
             WagePerMonth empWagesPerMonth = new WagePerMonth();
             empWagesPerMonth.PerMonthWage();
+
+            //UC-6
+            TotalWorkHrs100Days20 empTotalWorkHrs100Days20 = new TotalWorkHrs100Days20();
+            empTotalWorkHrs100Days20.WorkHrs100Days20();
         }
     }
 }
