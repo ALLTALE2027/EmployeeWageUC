@@ -18,6 +18,9 @@
             //UC-3
             PartTimeFullTime empPartTimeFullTime = new PartTimeFullTime();
             empPartTimeFullTime.partTimeFullTime();
+            //UC-4
+            SwitchCase empSwitchCase = new SwitchCase();
+            empSwitchCase.UsingSwitch();
         }
     }
 }
