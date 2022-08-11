@@ -21,6 +21,10 @@
             //UC-4
             SwitchCase empSwitchCase = new SwitchCase();
             empSwitchCase.UsingSwitch();
+
+            //UC-5
+            WagePerMonth empWagesPerMonth = new WagePerMonth();
+            empWagesPerMonth.PerMonthWage();
         }
     }
 }
