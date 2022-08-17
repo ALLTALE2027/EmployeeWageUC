@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace EmployeewageUC
 {
-    internal class ComputeEmployeeWage
+    internal class MultipleCompany
     {
         const int isFullTime = 1;
         const int isPartTime = 2;
-        int workingDays = 20;
-        int wagePerHour = 20;
-        int totalWorkingHrs = 100;
-        public void CalculateEmpWage()
+        int dailyWage;
+
+        public void WageMultipleCompany(string company, int wagePerHour, int workingDays, int totalWorkingHrs)
         {
             int empHrs;
-            int dailyWage;
             int totalWage = 0;
             int totalNoOfHrs = 0;
             int totalWorkingDays = 0;
@@ -31,21 +29,26 @@ namespace EmployeewageUC
                     case isFullTime:
                         empHrs = 8;
                         break;
+
                     case isPartTime:
                         empHrs = 4;
                         break;
+
                     default:
                         empHrs = 0;
                         break;
+
                 }
+
                 totalNoOfHrs += empHrs;
                 dailyWage = wagePerHour * empHrs;
                 totalWage += dailyWage;
                 totalWorkingDays++;
             }
-
-            Console.WriteLine("Total Wage for Month is: " + totalWage);
+            Console.WriteLine("Total month  Wage for person from {0} company is {1} rupees : ", company, totalWage);
             Console.WriteLine("Total No of hours are {0} and working days are {1}", totalNoOfHrs, totalWorkingDays);
+
+
         }
     }
 }

@@ -31,9 +31,15 @@
             empTotalWorkHrs100Days20.WorkHrs100Days20();
 
             //UC-7 
-
             ComputeEmployeeWage computeWage=new ComputeEmployeeWage();
             computeWage.CalculateEmpWage();
+
+
+            //UC-8
+            MultipleCompany muliplCompany=new MultipleCompany();
+            muliplCompany.WageMultipleCompany("Tesla",50,25,150);
+            muliplCompany.WageMultipleCompany("SpaceX",80,20,200);
+
         }
     }
 }
