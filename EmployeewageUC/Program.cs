@@ -29,6 +29,11 @@
             //UC-6
             TotalWorkHrs100Days20 empTotalWorkHrs100Days20 = new TotalWorkHrs100Days20();
             empTotalWorkHrs100Days20.WorkHrs100Days20();
+
+            //UC-7 
+
+            ComputeEmployeeWage computeWage=new ComputeEmployeeWage();
+            computeWage.CalculateEmpWage();
         }
     }
 }
