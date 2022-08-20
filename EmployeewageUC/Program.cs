@@ -72,13 +72,17 @@
             //companyList.GetMonthlyWage();
 
             //UC13
-            var uc13 = new MultipleCompaniesList();
-            uc13.AddCompany("Indigo", 30, 25, 150);
-            uc13.AddCompany("Kingfisher", 20, 40, 100);
-            uc13.AddCompany("AirIndia", 25, 50, 120);
-            uc13.WageCalculation();
-            uc13.GetDailyWages();
-            uc13.GetMonthlyWage();
+            var multipleCompaniesList = new MultipleCompaniesList();
+            multipleCompaniesList.AddCompany("Indigo", 30, 25, 150);
+            multipleCompaniesList.AddCompany("Kingfisher", 20, 40, 100);
+            multipleCompaniesList.AddCompany("AirIndia", 25, 50, 120);
+            multipleCompaniesList.WageCalculation();
+            multipleCompaniesList.GetDailyWages();
+            //multipleCompaniesList.GetMonthlyWage();
+
+            //UC14
+            multipleCompaniesList.GetTotalWageByCompany("Indigo");
+            multipleCompaniesList.GetTotalWageByCompany("AirIndia");
         }
     }
 }
