@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EmployeewageUC
-{
+{  //UC12
     internal class MultipleCompaniesList
     {
         private List<EmpWageBuilder> _companyArray;
@@ -31,8 +31,20 @@ namespace EmployeewageUC
             foreach (var empObj in _companyArray)
             {
                 Console.WriteLine(empObj.GetWage());
+                Console.WriteLine();
 
             }
+        }
+
+        //UC13
+        public void GetDailyWages()
+        {
+            foreach (var empObj in _companyArray)
+            {
+                empObj.ReturnDailyWage();
+            }
+
+            Console.WriteLine();
         }
     }
 }

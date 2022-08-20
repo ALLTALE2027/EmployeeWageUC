@@ -71,6 +71,7 @@ namespace EmployeewageUC
 
 
             Console.WriteLine("Total No of hours are {0} and working days are {1} in {2} company", totalNoOfHrs, totalWorkingDays, this.company);
+            Console.WriteLine();
         }
 
         public string GetWage()
