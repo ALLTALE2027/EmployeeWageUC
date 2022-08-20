@@ -46,13 +46,21 @@
             //uc9.CalculateWage();
             //Console.WriteLine(uc9.GetWage());
 
+            //UC10
+            //var companyArray = new MultipleEmpWageBuilder();
+            //companyArray.AddCompany("Indigo", 30, 25, 150);
+            //companyArray.AddCompany("Kingfisher", 30, 40, 111);
+            //companyArray.AddCompany("AirIndia", 25, 50, 150);
+            //companyArray.WageCalculation();
+            //companyArray.GetSalary();
 
-            var companyArray = new MultipleEmpWageBuilder();
-            companyArray.AddCompany("Indigo", 30, 25, 150);
-            companyArray.AddCompany("Kingfisher", 30, 40, 111);
-            companyArray.AddCompany("AirIndia", 25, 50, 150);
-            companyArray.WageCalculation();
-            companyArray.GetSalary();
+            //UC11
+            var company_Interface = new MultipleEmpWageBuilder();
+            company_Interface.AddCompany("ABC", 30, 25, 150);
+            company_Interface.AddCompany("XYZ", 30, 40, 100);
+            company_Interface.AddCompany("UVW", 25, 50, 150);
+            company_Interface.WageCalculation();
+            company_Interface.GetSalary();
 
         }
     }
