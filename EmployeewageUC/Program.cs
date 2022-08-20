@@ -55,13 +55,21 @@
             //companyArray.GetSalary();
 
             //UC11
-            var company_Interface = new MultipleEmpWageBuilder();
-            company_Interface.AddCompany("ABC", 30, 25, 150);
-            company_Interface.AddCompany("XYZ", 30, 40, 100);
-            company_Interface.AddCompany("UVW", 25, 50, 150);
-            company_Interface.WageCalculation();
-            company_Interface.GetSalary();
+            //var company_Interface = new MultipleEmpWageBuilder();
+            //company_Interface.AddCompany("ABC", 30, 25, 150);
+            //company_Interface.AddCompany("XYZ", 30, 40, 100);
+            //company_Interface.AddCompany("UVW", 25, 50, 150);
+            //company_Interface.WageCalculation();
+            //company_Interface.GetSalary();
 
+
+            //UC12
+            var companyList = new MultipleCompaniesList();
+            companyList.AddCompany("Indigo", 30, 25, 150);
+            companyList.AddCompany("Kingfisher", 30, 40, 111);
+            companyList.AddCompany("AirIndia", 25, 50, 150);
+            companyList.WageCalculation();
+            companyList.GetMonthlyWage();
         }
     }
 }
