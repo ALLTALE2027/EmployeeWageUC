@@ -42,9 +42,17 @@
             //muliplCompany.WageMultipleCompany("SpaceX",80,20,200);
 
             //UC-9
-            var uc9 = new EmpWageBuilder("Kingfisher", 30, 40, 100);
-            uc9.CalculateWage();
-            Console.WriteLine(uc9.GetWage());
+            //var uc9 = new EmpWageBuilder("Kingfisher", 30, 40, 100);
+            //uc9.CalculateWage();
+            //Console.WriteLine(uc9.GetWage());
+
+
+            var companyArray = new MultipleEmpWageBuilder();
+            companyArray.AddCompany("Indigo", 30, 25, 150);
+            companyArray.AddCompany("Kingfisher", 30, 40, 111);
+            companyArray.AddCompany("AirIndia", 25, 50, 150);
+            companyArray.WageCalculation();
+            companyArray.GetSalary();
 
         }
     }
